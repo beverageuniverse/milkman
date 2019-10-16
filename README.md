@@ -6,7 +6,7 @@ It limits the Milkman products to Manhattan and some nearby areas.
 bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
-composer require beverageuniverse/manhattan:*
+composer require beverageuniverse/milkman:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile
@@ -26,10 +26,10 @@ bin/magento maintenance:disable
 ## How to upgrade
 ```
 bin/magento maintenance:enable
-composer remove beverageuniverse/manhattan
+composer remove beverageuniverse/milkman
 rm -rf composer.lock
 composer clear-cache
-composer require beverageuniverse/manhattan:*
+composer require beverageuniverse/milkman:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
 bin/magento setup:di:compile

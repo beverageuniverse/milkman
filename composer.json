@@ -1,9 +1,9 @@
 {
-	"name": "beverageuniverse/manhattan"
-	,"version": "0.0.1"
+	"name": "beverageuniverse/milkman"
+	,"version": "0.0.2"
 	,"description": "It limits the Milkman products to Manhattan and some nearby areas"
 	,"type": "magento2-module"
-	,"homepage": "https://github.com/beverageuniverse/manhattan"
+	,"homepage": "https://github.com/beverageuniverse/milkman"
 	,"license": "MIT"
 	,"authors": [{
 		"name": "Dmitry Fedyuk"
@@ -12,6 +12,6 @@
 		,"role": "Developer"
 	}]
 	,"require": {"mage2pro/core": ">=5.3.6"}
-	,"autoload": {"files": ["registration.php"], "psr-4": {"BeverageUniverse\\Manhattan\\": ""}}
+	,"autoload": {"files": ["registration.php"], "psr-4": {"BeverageUniverse\\Milkman\\": ""}}
 	,"keywords": ["Magento 2"]
 }
