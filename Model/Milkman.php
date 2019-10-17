@@ -43,21 +43,21 @@ class Milkman extends \Magento\Framework\Model\AbstractModel implements MilkmanI
      *
      * @return int
      */
-    public function getMId()
+    function getMId()
     {
         return $this->getData(self::M_ID);
     }
     /**
      * Set MId.
      */
-    public function setMId($mId)
+    function setMId($mId)
     {
         return $this->setData(self::M_ID, $mId);
     }
     /**
      * Set CategoryId.
      */
-    public function setCategoryId($categoryId)
+    function setCategoryId($categoryId)
     {
         return $this->setData(self::CATEGORY_ID, $categoryId);
     }
@@ -66,7 +66,7 @@ class Milkman extends \Magento\Framework\Model\AbstractModel implements MilkmanI
      *
      * @return int
      */
-    public function getCategoryId()
+    function getCategoryId()
     {
         return $this->getData(self::CATEGORY_ID);
     }
@@ -75,7 +75,7 @@ class Milkman extends \Magento\Framework\Model\AbstractModel implements MilkmanI
      *
      * @return varchar
      */
-    public function getZipCode()
+    function getZipCode()
     {
         return $this->getData(self::ZIP_CODE);
     }
@@ -83,7 +83,7 @@ class Milkman extends \Magento\Framework\Model\AbstractModel implements MilkmanI
     /**
      * Set Zipcode.
      */
-    public function setZipCode($zipCode)
+    function setZipCode($zipCode)
     {
         return $this->setData(self::ZIP_CODE, $zipCode);
     }

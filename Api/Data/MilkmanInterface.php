@@ -25,35 +25,35 @@ interface MilkmanInterface
     *
     * @return int
     */
-    public function getMId();
+    function getMId();
 
    /**
     * Set mId.
     */
-    public function setMId($mId);
+    function setMId($mId);
 
    /**
     * Get category id.
     *
     * @return varchar
     */
-    public function getCategoryId();
+    function getCategoryId();
 
    /**
     * Set category id.
     */
-    public function setCategoryId($categoryId);
+    function setCategoryId($categoryId);
 
    /**
     * Get zipcode.
     *
     * @return varchar
     */
-    public function getZipCode();
+    function getZipCode();
 
    /**
     * Set zipcode.
     */
-    public function setZipCode($zipCode);
+    function setZipCode($zipCode);
   
 }

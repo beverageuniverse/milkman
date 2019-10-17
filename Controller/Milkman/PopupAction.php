@@ -11,7 +11,7 @@ use Magento\Framework\Stdlib\CookieManagerInterface;
 class PopupAction extends \Magento\Framework\App\Action\Action
 {
   protected $resultPageFactory;
-  public function __construct(\Magento\Framework\App\Action\Context $context,Milkman $model,\Magento\Framework\Registry $category,CookieManagerInterface $cookieManager,CookieMetadataFactory $cookieMetadataFactory,SessionManagerInterface $sessionManager,\Magento\Framework\ObjectManagerInterface $objectManager)
+  function __construct(\Magento\Framework\App\Action\Context $context,Milkman $model,\Magento\Framework\Registry $category,CookieManagerInterface $cookieManager,CookieMetadataFactory $cookieMetadataFactory,SessionManagerInterface $sessionManager,\Magento\Framework\ObjectManagerInterface $objectManager)
   {
     parent::__construct($context);
       $this->model = $model; // for getting model
@@ -22,7 +22,7 @@ class PopupAction extends \Magento\Framework\App\Action\Action
       $this->_objectManager = $objectManager;      
   }
 
-  public function execute()
+  function execute()
   {
       $splitzip = array();
       $Allcode = array();

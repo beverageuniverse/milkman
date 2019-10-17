@@ -20,11 +20,11 @@ class Categories extends \Magento\Ui\Component\Listing\Columns
    * @param array $data
    * @param UiComponentFactory $uiComponentFactory
    */
-    /*public function __construct(ContextInterface $context, UiComponentFactory $uiComponentFactory, array $components = [], array $data = []) {
+    /*function __construct(ContextInterface $context, UiComponentFactory $uiComponentFactory, array $components = [], array $data = []) {
         $this->uiComponentFactory = $uiComponentFactory;
         parent::__construct($context, $components, $data);
     }*/
-    public function __construct(ContextInterface $context,array $components = [],array $data = [],UiComponentFactory $uiComponentFactory) {
+    function __construct(ContextInterface $context,array $components = [],array $data = [],UiComponentFactory $uiComponentFactory) {
         parent::__construct($context, $components, $data);
     }
      /**
@@ -33,7 +33,7 @@ class Categories extends \Magento\Ui\Component\Listing\Columns
      * @param array $dataSource
      * @return array
      */
-    public function prepareDataSource(array $dataSource)
+    function prepareDataSource(array $dataSource)
      {
         if (isset($dataSource['data']['items'])) {
             $fieldName = $this->getData('name');

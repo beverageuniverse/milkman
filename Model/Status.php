@@ -14,7 +14,7 @@ class Status implements OptionSourceInterface
      * Get Milkman row status type labels array.
      * @return array
      */
-    public function getOptionArray()
+    function getOptionArray()
     {
         $options = ['1' => __('Enabled'),'0' => __('Disabled')];
         return $options;
@@ -25,7 +25,7 @@ class Status implements OptionSourceInterface
      *
      * @return array
      */
-    public function getAllOptions()
+    function getAllOptions()
     {
         $res = $this->getOptions();
         array_unshift($res, ['value' => '', 'label' => '']);
@@ -36,7 +36,7 @@ class Status implements OptionSourceInterface
      * Get Milkman row type array for option element.
      * @return array
      */
-    public function getOptions()
+    function getOptions()
     {
         $res = [];
         foreach ($this->getOptionArray() as $index => $value) {
@@ -48,7 +48,7 @@ class Status implements OptionSourceInterface
     /**
      * {@inheritdoc}
      */
-    public function toOptionArray()
+    function toOptionArray()
     {
         return $this->getOptions();
     }

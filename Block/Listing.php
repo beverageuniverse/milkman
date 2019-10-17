@@ -26,7 +26,7 @@ class Listing extends Template
      * @param Context $context
      * @param array $data
      */
-    public function __construct(Context $context,Milkman $model,\Magento\Framework\Registry $category,\Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory, \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $categoryCollectionFactory)
+    function __construct(Context $context,Milkman $model,\Magento\Framework\Registry $category,\Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory, \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $categoryCollectionFactory)
     {
         parent::__construct($context);
         $this->model=$model;
@@ -44,7 +44,7 @@ class Listing extends Template
     {
             return parent::_prepareLayout();
     }
-    public function getParentId()
+    function getParentId()
       {
         $c_id=$this->category->registry('current_category');
         $cc1=$c_id->getId();
@@ -56,7 +56,7 @@ class Listing extends Template
 
     }
 
-    public function getAllCategory()
+    function getAllCategory()
     {
         $allData = array();
         $cats=$this->model->getCollection();
@@ -66,27 +66,27 @@ class Listing extends Template
         }
         return $allData;
     }
-    public function getCurrentCategory()
+    function getCurrentCategory()
     {
        return $this->category->registry('current_category');
     }
-    public function getCurrentProduct()
+    function getCurrentProduct()
     {
       return $this->category->registry('current_product');
     }
-    public function getproCategoryId()
+    function getproCategoryId()
     {
       $p1=$this->getCurrentProduct();
       $categoryIds = $p1->getCategoryIds();
       return $categoryIds;
     }
-    public function getProductCollection()
+    function getProductCollection()
      {
        $collection = $this->_productCollectionFactory->create();
        $collection->addAttributeToSelect('*');
        return $collection;
     }
-    public function getParentCategory()
+    function getParentCategory()
     {
         if($this->getCurrentCategory()):
             if($this->getCurrentCategory()->getParentCategory()):
@@ -94,13 +94,13 @@ class Listing extends Template
             endif;
         endif;
     }
-    public function getCategoryCollection()
+    function getCategoryCollection()
     {
        $collection = $this->_categoryCollectionFactory->create();
        $collection->addAttributeToSelect('*');
        return $collection;
     }
-    public function getLevel1Category(){
+    function getLevel1Category(){
          if($this->getCurrentCategory()){
              if($this->getCurrentCategory()->getParentCategories()){
                  foreach ($this->getCurrentCategory()->getParentCategories() as $parent) {
@@ -113,7 +113,7 @@ class Listing extends Template
          }
          return null;
      }
-     public function getLevel2Category($cat_id)
+     function getLevel2Category($cat_id)
      {
         $categories = $this->getCategoryCollection()->addAttributeToFilter('entity_id', $cat_id);
         foreach ($categories as $category)

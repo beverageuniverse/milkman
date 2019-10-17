@@ -9,17 +9,17 @@ use Magento\Framework\Data\Form\FormKey;
 class Display extends Template
 {
      protected $formKey;/*protected $authSession;*/
-    public function __construct(Context $context, Milkman $model,array $data,FormKey $formKey)
+    function __construct(Context $context, Milkman $model,array $data,FormKey $formKey)
     {
         $this->model = $model; // for getting model
         parent::__construct($context,$data);
         $this->formKey = $formKey;
     }
-    public function getFormKey() //To get form key
+    function getFormKey() //To get form key
     {
         return $this->formKey->getFormKey();
     }
-    public function getMilkmanCollection()
+    function getMilkmanCollection()
     {
         $mCollection = $this->model->getCollection();
         return $mCollection;

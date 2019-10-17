@@ -25,7 +25,7 @@ class Form extends \Magento\Backend\Block\Widget\Form\Generic
      * @param \Magento\Cms\Model\Wysiwyg\Config $wysiwygConfig,
      * @param \Beverage\Milkman\Model\Status $options,
      */
-    public function __construct(
+    function __construct(
         \Magento\Backend\Block\Template\Context $context,
         \Magento\Framework\Registry $registry,
         \Magento\Framework\Data\FormFactory $formFactory,

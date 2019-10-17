@@ -25,7 +25,7 @@ class InstallSchema implements InstallSchemaInterface
      *
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
-    public function install(
+    function install(
         SchemaSetupInterface $setup,
         ModuleContextInterface $context
     ) {

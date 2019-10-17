@@ -34,7 +34,7 @@ class ActionEdit extends Column
      * @param array              $data
      * @param string             $editUrl
      */
-    public function __construct(
+    function __construct(
         ContextInterface $context,
         UiComponentFactory $uiComponentFactory,
         UrlInterface $urlBuilder,
@@ -54,7 +54,7 @@ class ActionEdit extends Column
      *
      * @return array
      */
-    public function prepareDataSource(array $dataSource)
+    function prepareDataSource(array $dataSource)
     {
         if (isset($dataSource['data']['items'])) {
             foreach ($dataSource['data']['items'] as &$item) {

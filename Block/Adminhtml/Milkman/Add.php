@@ -22,7 +22,7 @@ class Add extends \Magento\Backend\Block\Widget\Form\Container
      * @param \Magento\Framework\Registry           $registry
      * @param array                                 $data
      */
-    public function __construct(
+    function __construct(
         \Magento\Backend\Block\Widget\Context $context,
         \Magento\Framework\Registry $registry,
         array $data = []) {
@@ -53,7 +53,7 @@ class Add extends \Magento\Backend\Block\Widget\Form\Container
      *
      * @return \Magento\Framework\Phrase
      */
-    public function getHeaderText()
+    function getHeaderText()
     {
         return __('Add Data');
     }
@@ -75,7 +75,7 @@ class Add extends \Magento\Backend\Block\Widget\Form\Container
      *
      * @return string
      */
-    public function getFormActionUrl()
+    function getFormActionUrl()
     {
 
         if ($this->hasFormActionUrl()) {

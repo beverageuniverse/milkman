@@ -31,7 +31,7 @@ class MassDelete extends \Magento\Backend\App\Action
      * @param Filter            $filter
      * @param CollectionFactory $collectionFactory
      */
-    public function __construct(
+    function __construct(
         Context $context,
         Filter $filter,
         CollectionFactory $collectionFactory
@@ -41,7 +41,7 @@ class MassDelete extends \Magento\Backend\App\Action
         $this->_collectionFactory = $collectionFactory;
         parent::__construct($context);
     }
-    public function execute()
+    function execute()
     {
         $collection = $this->_filter->getCollection($this->_collectionFactory->create());
         $recordDeleted = 0;

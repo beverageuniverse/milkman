@@ -21,7 +21,7 @@ class Save extends \Magento\Backend\App\Action
      * @param \Magento\Backend\App\Action\Context $context
      * @param \Beverage\Milkman\Model\MilkmanFactory $milkmanFactory
      */
-    public function __construct(
+    function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Beverage\Milkman\Model\MilkmanFactory $milkmanFactory
     ) {
@@ -33,7 +33,7 @@ class Save extends \Magento\Backend\App\Action
      * @SuppressWarnings(PHPMD.CyclomaticComplexity)
      * @SuppressWarnings(PHPMD.NPathComplexity)
      */
-    public function execute()
+    function execute()
     {
         $data = $this->getRequest()->getPostValue();
         if (!$data) {

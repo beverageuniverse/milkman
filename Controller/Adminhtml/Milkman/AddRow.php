@@ -20,7 +20,7 @@ class AddRow extends \Magento\Backend\App\Action
      * @param \Magento\Framework\Registry $coreRegistry,
      * @param \Beverage\Milkman\Model\MilkmanFactory $milkmanFactory
      */
-    public function __construct(
+    function __construct(
         \Magento\Backend\App\Action\Context $context,
         \Magento\Framework\Registry $coreRegistry,
         \Beverage\Milkman\Model\MilkmanFactory $milkmanFactory
@@ -34,7 +34,7 @@ class AddRow extends \Magento\Backend\App\Action
      * Mapped Milkman List page.
      * @return \Magento\Backend\Model\View\Result\Page
      */
-    public function execute()
+    function execute()
     {
         $rowId = (int) $this->getRequest()->getParam('id');
         $rowData = $this->milkmanFactory->create();
