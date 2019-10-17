@@ -6,6 +6,7 @@ It limits the Milkman products to Manhattan and some nearby areas.
 bin/magento maintenance:enable
 rm -rf composer.lock
 composer clear-cache
+rm -rf app/code/Beverage/Milkman
 composer require beverageuniverse/milkman:*
 bin/magento setup:upgrade
 rm -rf var/di var/generation generated/code
