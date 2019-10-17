@@ -1,12 +1,4 @@
 <?php
-/**
- * Milkman Milkman ResourceModel.
- * @category  Beverage
- * @package   Beverage_Milkman
- * @author    Beverage
- * @copyright Copyright (c) 2010-2016 Beverage Software Private Limited (https://Beverage.com)
- * @license   https://store.Beverage.com/license.html
- */
 namespace Beverage\Milkman\Model\ResourceModel;
 
 /**
@@ -14,36 +6,36 @@ namespace Beverage\Milkman\Model\ResourceModel;
  */
 class Milkman extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
-    /**
-     * @var string
-     */
-    protected $_idFieldName = 'm_id';
-    /**
-     * @var \Magento\Framework\Stdlib\DateTime\DateTime
-     */
-    protected $_date;
+	/**
+	 * @var string
+	 */
+	protected $_idFieldName = 'm_id';
+	/**
+	 * @var \Magento\Framework\Stdlib\DateTime\DateTime
+	 */
+	protected $_date;
 
-    /**
-     * Construct.
-     *
-     * @param \Magento\Framework\Model\ResourceModel\Db\Context $context
-     * @param \Magento\Framework\Stdlib\DateTime\DateTime       $date
-     * @param string|null                                       $resourcePrefix
-     */
-    function __construct(
-        \Magento\Framework\Model\ResourceModel\Db\Context $context,
-        \Magento\Framework\Stdlib\DateTime\DateTime $date,
-        $resourcePrefix = null
-    ) {
-        parent::__construct($context, $resourcePrefix);
-        $this->_date = $date;
-    }
+	/**
+	 * Construct.
+	 *
+	 * @param \Magento\Framework\Model\ResourceModel\Db\Context $context
+	 * @param \Magento\Framework\Stdlib\DateTime\DateTime       $date
+	 * @param string|null                                       $resourcePrefix
+	 */
+	function __construct(
+		\Magento\Framework\Model\ResourceModel\Db\Context $context,
+		\Magento\Framework\Stdlib\DateTime\DateTime $date,
+		$resourcePrefix = null
+	) {
+		parent::__construct($context, $resourcePrefix);
+		$this->_date = $date;
+	}
 
-    /**
-     * Initialize resource model.
-     */
-    protected function _construct()
-    {
-        $this->_init('milkman_zipcode', 'm_id');
-    }
+	/**
+	 * Initialize resource model.
+	 */
+	protected function _construct()
+	{
+		$this->_init('milkman_zipcode', 'm_id');
+	}
 }
