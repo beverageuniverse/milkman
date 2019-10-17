@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/** Grid menu xml
+ * @category  Beverage
+ * @package   Beverage_Milkman
+ * @author    Beverage
+ * @copyright Copyright (c) 2010-2017 Beverage Software Private Limited (https://Beverage.com)
+ * @license   https://store.Beverage.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Beverage_Milkman::manager" title="Milkman Manager" module="Beverage_Milkman" sortOrder="30" resource="Beverage_Milkman::manager" />
+        <add id="Beverage_Milkman::add_row" title="Milkman Manager" module="Beverage_Milkman" sortOrder="40" parent="Beverage_Milkman::manager" action="milkman/milkman" resource="Beverage_Milkman::add_row"/>
+    </menu>
+</config>

@@ -1,3 +1,3 @@
 <?php
 use Magento\Framework\Component\ComponentRegistrar as R;
-R::register(R::MODULE, 'BeverageUniverse_Milkman', __DIR__);
+R::register(R::MODULE, 'Beverage_Milkman', __DIR__);

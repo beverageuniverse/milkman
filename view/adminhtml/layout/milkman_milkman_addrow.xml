@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Beverage Milkman Product Map Layout
+ * @category  Beverage
+ * @package   Beverage_Milkman
+ * @author    Beverage
+ * @copyright Copyright (c) 2010-2017 Beverage Software Private Limited (https://Beverage.com)
+ * @license   https://store.Beverage.com/license.html
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+           <block class="Beverage\Milkman\Block\Adminhtml\Milkman\Add" name="add_row" />
+        </referenceContainer>
+    </body>
+</page>

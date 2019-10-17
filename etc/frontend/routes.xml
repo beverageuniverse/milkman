@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Beverage Grid routes xml
+ * @category  Beverage
+ * @package   Beverage_Milkman
+ * @author    Beverage
+ * @copyright Copyright (c) 2010-2017 Beverage Software Private Limited (https://Beverage.com)
+ * @license   https://store.Beverage.com/license.html
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="milkman" frontName="milkman">
+            <module name="Beverage_Milkman" />
+        </route>
+    </router>
+</config>
