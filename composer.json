@@ -1,6 +1,6 @@
 {
 	"name": "beverageuniverse/milkman"
-	,"version": "0.0.4"
+	,"version": "0.0.5"
 	,"description": "It limits the Milkman products to Manhattan and some nearby areas"
 	,"type": "magento2-module"
 	,"homepage": "https://github.com/beverageuniverse/milkman"
